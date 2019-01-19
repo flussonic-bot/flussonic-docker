@@ -17,3 +17,5 @@ VOLUME ["/etc/flussonic"]
 
 EXPOSE 80 1935 554
 
+CMD ["/etc/init.d/flussonic", "run"]
+
