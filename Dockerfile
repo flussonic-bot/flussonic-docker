@@ -21,3 +21,4 @@ CMD ["/opt/flussonic/bin/flussonic", \
   "-l", "/var/log/flussonic", \
   "-noinput"]
 
+
