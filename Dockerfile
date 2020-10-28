@@ -1,3 +1,4 @@
+# DOCKER_IMAGE_VERSION 00000000
 FROM ubuntu:18.04
 
 ARG BRANCH=master
@@ -20,5 +21,4 @@ CMD ["/opt/flussonic/bin/flussonic", \
   "-p", "/var/run/flussonic/pid", \
   "-l", "/var/log/flussonic", \
   "-noinput"]
-
-
+  
