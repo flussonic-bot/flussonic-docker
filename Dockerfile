@@ -17,7 +17,7 @@ EXPOSE 80 443 1935 554
 
 WORKDIR /opt/flussonic
 CMD ["/opt/flussonic/bin/run", \
-  "-e", "production", \
+  "--debug", \
   "-p", "/var/run/flussonic/pid", \
   "-l", "/var/log/flussonic", \
   "-noinput"]
