@@ -1,4 +1,4 @@
-# DOCKER_IMAGE_VERSION 21.03-183-ge2af534
+# DOCKER_IMAGE_VERSION 21.03-185-g3f98cdf
 FROM ubuntu:18.04
 
 ARG BRANCH=master
@@ -9,7 +9,7 @@ RUN wget -q -O - http://apt.flussonic.com/binary/gpg.key | apt-key add -
 
 RUN apt update && apt -y install flussonic-erlang=22.3.9
 RUN apt -y install flussonic-transcoder-base=20.11.6
-RUN apt -y install flussonic=21.03-183-ge2af534
+RUN apt -y install flussonic=21.03-185-g3f98cdf
 
 VOLUME ["/var/log/flussonic"]
 VOLUME ["/var/run/flussonic"]
