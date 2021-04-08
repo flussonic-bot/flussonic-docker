@@ -1,4 +1,4 @@
-# DOCKER_IMAGE_VERSION 21.04-7-ga2a92f5
+# DOCKER_IMAGE_VERSION 21.04-9-gbf74548
 FROM ubuntu:18.04
 
 ARG BRANCH=master
@@ -7,9 +7,9 @@ RUN apt-get update && apt-get -y install wget gnupg
 RUN echo "deb http://apt.flussonic.com/repo/ ${BRANCH}/" > /etc/apt/sources.list.d/flussonic.list
 RUN wget -q -O - http://apt.flussonic.com/binary/gpg.key | apt-key add -
 
-RUN apt update && apt -y install flussonic-erlang=22.3.12
+RUN apt update && apt -y install flussonic-erlang=22.3.13
 RUN apt -y install flussonic-transcoder-base=20.11.6
-RUN apt -y install flussonic=21.04-7-ga2a92f5
+RUN apt -y install flussonic=21.04-9-gbf74548
 
 VOLUME ["/var/log/flussonic"]
 VOLUME ["/var/run/flussonic"]
