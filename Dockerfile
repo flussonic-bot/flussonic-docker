@@ -8,7 +8,7 @@ RUN echo "deb http://apt.flussonic.com/repo/ ${BRANCH}/" > /etc/apt/sources.list
 RUN wget -q -O - http://apt.flussonic.com/binary/gpg.key | apt-key add -
 
 RUN apt update && apt -y install flussonic-erlang=24.0.3.6
-RUN apt -y install flussonic-transcoder-base=20.11.6
+RUN apt -y install flussonic-transcoder-base=21.07.1
 RUN apt -y install flussonic=
 
 VOLUME ["/var/log/flussonic"]
