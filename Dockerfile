@@ -7,8 +7,8 @@ RUN apt-get update && apt-get -y install wget gnupg
 RUN echo "deb http://apt.flussonic.com/repo/ ${BRANCH}/" > /etc/apt/sources.list.d/flussonic.list
 RUN wget -q -O - http://apt.flussonic.com/binary/gpg.key | apt-key add -
 
-RUN apt update && apt -y install flussonic-erlang=24.0.3.8
-RUN apt -y install flussonic-transcoder-base=21.07.1
+RUN apt update && apt -y install flussonic-erlang=24.0.3.9
+RUN apt -y install flussonic-transcoder-base=21.07.2
 RUN apt -y install flussonic=
 
 VOLUME ["/var/log/flussonic"]
