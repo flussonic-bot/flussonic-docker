@@ -1,4 +1,4 @@
-# DOCKER_IMAGE_VERSION 21.08-229-g86bd9a4
+# DOCKER_IMAGE_VERSION 21.08-236-g06930c0
 FROM ubuntu:18.04
 
 ARG BRANCH=master
@@ -7,9 +7,9 @@ COPY gpg.key /etc/apt/trusted.gpg.d/flussonic.gpg
 COPY provisioner.txt /opt/flussonic/lib/online/priv/provisioner.txt
 
 RUN apt update && apt -y install \
-  flussonic-erlang=24.0.3.9 \
+  flussonic-erlang=24.0.6.1 \
   flussonic-transcoder=21.08.1 \
-  flussonic=21.08-229-g86bd9a4 && \
+  flussonic=21.08-236-g06930c0 && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
